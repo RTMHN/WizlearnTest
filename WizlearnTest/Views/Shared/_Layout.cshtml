@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - WizlearnTest</title>
+   
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/lightbox.css" rel="stylesheet" />
+    <link href="~/Content/responsive-tabs.css" rel="stylesheet" />
+    @RenderSection("style", required: false)
+
+</head>
+<body>
+   
+
+    <div class="container body-content">
+        @RenderBody()
+       
+
+        <div class="page-loadin"><img src="~/Resources/Images/ajaxload.gif"></div>
+
+        <hr />
+        <div class="footer">
+            <p> &copy;@DateTime.Now.Year SubodanaHerath </p>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Common/jquery-ui.js"></script>
+    <script src="~/Scripts/Common/lightbox.js"></script>
+    <script src="~/Scripts/Common/responsive-tabs.js"></script>
+    <script src="~/Scripts/Common/jquery.bootpag.min.js"></script>
+    <script src="~/Scripts/Common/Site.js"></script>
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>
